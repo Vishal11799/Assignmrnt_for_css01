@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* #id selector */
+#css-zen-garden {
+    max-width: 100%;
+    font-size: 1.125em;
+    text-decoration: none;
+    background-image: linear-gradient(#d48834 ,#9dcad0);
+    line-height: 1.2;
+}
+/* type selector */
+p { 
+
+	font-family: 'Caveat', cursive;
+	text-align: justify;
+}
+
+/* Direct Sibling Combinator */
+h1 + h2 {
+    font-size: 2.280em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 { 
+	letter-spacing: 1px; 
+    font-size: 1.5em;
+	color: #04453d;
+}
+
+a {
+    color: #04453d;
+    font-weight: 900;
+    text-decoration:underline;
+}
+
+/* Attribute Selector */
+[role="article"] {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* -----page contend----- */
+
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+    color: #d48834;
+}
+
+/* Pseudo-Class Selector */
+a:hover, a:focus, a:active { 
+	text-decoration: underline; 
+    border: 1px solid #d48834;
+    background-color: #04453d;
+    color: #d48834;
+    border-radius: 10%;
+    transition: 1s;
+    font-size: 1.2em;
+}
+
+.header_view {
+    max-width: 100%;
+    height: 100vh;
+    background :url(./Asset/backgroundimg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    filter: brightness(70%);    
+}
+
+header h1 , h2 { 
+    animation-name: example02;
+    animation-duration: 15s;
+    animation-iteration-count: 20;
+    color: #04453d;
+	
+}
+
+/* Descendant Combinator */
+header h1 {
+    font-size: 3em;
+}
+
+.page-wrapper { 
+	margin: 0; 
+	position: relative;
+}
+
+body > div > div {
+    width: 75%;
+    margin: 0 auto;
+    padding: 20px 25px;  
+}
+
+.main.supporting {
+    float: right;
+    width: 75%;
+    padding: 2.2%;
+}
+
+.wrapper ul:nth-child(odd){
+    color: #04453d;
+    font-weight: bolder;
+    font-size: small;
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #99816f;
+    padding: 10px;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: 20;
+    bottom: 0;
+    position: relative;
+    right: 152px;
+    
+}
+
+footer a {
+    color: #d48834;
+}
+
+footer a:hover {
+    padding: 10px;
+    transition: 1.2s;
+}
+
+aside {
+    top: 0;
+    right: 0;
+    width: 25%; 
+    margin-left: 20px; 
+    margin-top: 20px; 
+    
+}
+
+/* Child Combinator */
+.sidebar > a {
+    color: #04453d;
+}
+
+.sidebar {
+    width: 25%;
+    line-height: 3em;
+    padding: 20px;
+}
+
+/* ---creativity--- */
+
+
+@keyframes example {
+    0%   {background-color:pink; }
+    25%  {background-color:yellow;}
+    50%  {background-color:blue;}
+    75%  {background-color:green; }
+    100% {background-color:red; }
+}
+
+@keyframes example02 {
+    0%   {color:pink; }
+    25%  {color:yellow;}
+    50%  {color:blue;}
+    75%  {color:green; }
+    100% {color:red; }
+}
+
+
+
+
